@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from orders.models.product import Product
+from django.views.generic import (
+    ListView
+)
 
-# Create your views here.
+
+class ListProducts(ListView):
+    model = Product
