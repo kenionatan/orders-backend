@@ -21,6 +21,8 @@ from orders.api import viewsets
 router = routers.DefaultRouter()
 router.register(r'client', viewsets.ClientViewSet)
 router.register(r'product', viewsets.ProductViewSet)
+router.register(r'order', viewsets.OrderViewSet)
+router.register(r'order-item', viewsets.OrderItemViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
